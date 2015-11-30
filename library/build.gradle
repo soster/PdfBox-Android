@@ -1,8 +1,12 @@
 apply plugin: 'com.android.library'
 
+repositories {
+    jcenter()
+}
+
 ext {
 	PUBLISH_GROUP_ID = 'org.apache'
-	PUBLISH_ARTIFACT_ID = 'pdfbox-android'
+	PUBLISH_ARTIFACT_ID = 'pdfbox-android-handwrite'
 	PUBLISH_VERSION = VERSION_NAME
 }
 
