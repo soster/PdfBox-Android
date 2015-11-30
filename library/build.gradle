@@ -1,8 +1,12 @@
 apply plugin: 'com.android.library'
 
+repositories {
+    jcenter()
+}
+
 ext {
 	PUBLISH_GROUP_ID = 'org.apache'
-	PUBLISH_ARTIFACT_ID = 'pdfbox-android'
+	PUBLISH_ARTIFACT_ID = 'pdfbox-android-handwrite'
 	PUBLISH_VERSION = VERSION_NAME
 }
 
@@ -31,8 +35,9 @@ android {
 
 dependencies {
     compile 'com.madgag.spongycastle:core:1.51.0.0'
-    compile 'com.madgag.spongycastle:pkix:1.51.0.0'
     compile 'com.madgag.spongycastle:prov:1.51.0.0'
+    compile 'com.madgag.spongycastle:pkix:1.51.0.0'
+    compile 'com.madgag.spongycastle:pg:1.51.0.0'
 }
 
 //apply from: 'https://raw.githubusercontent.com/blundell/release-android-library/master/android-release-aar.gradle'
